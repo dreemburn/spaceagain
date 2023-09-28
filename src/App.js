@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import {BrowserRouter} from "react-router-dom";
+//import {BrowserRouter} from "react-router-dom";
 
 import styles from "./App.module.css";
 import {LoadingContext} from "./context/LoadingProvider";
@@ -14,7 +14,7 @@ function App ()
 
   return (
     <>
-      <BrowserRouter>
+      
         <div className={styles["app"]}>
           <header className={styles["app__header"]}>
             <NavigationBar />
@@ -28,7 +28,7 @@ function App ()
             <Motto />
           </footer>
         </div>
-      </BrowserRouter>
+      
 
       {
         isLoading
